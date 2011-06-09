@@ -10,7 +10,7 @@ module CoreExt
       #   "some_non_empty_string".to_b #=> false
       #
       def to_b
-        [ "true", "1", "T", "t", "yes", "+" ].include? self.downcase
+        [ "true", "1", "t", "yes", "+" ].include? self.downcase
       end
     end
   end
